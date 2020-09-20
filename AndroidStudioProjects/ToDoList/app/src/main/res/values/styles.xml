@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#434243</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="item" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/change_main</item>
+        <item name="colorPrimaryDark">@color/change_main</item>
+        <item name="colorAccent">#6C6E6E</item>
+    </style>
+    <style name="MyDialogTheme"
+        parent="Theme.MaterialComponents.Dialog.MinWidth">
+        <item name="android:timePickerMode">spinner</item>
+        <item name="background">@color/backgroundBottom</item>
+    </style>
+
+
+
+
+</resources>

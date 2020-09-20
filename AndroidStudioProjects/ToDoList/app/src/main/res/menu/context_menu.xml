@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="@string/done_menu"
+    android:id="@+id/performed">
+</item>
+    <item
+        android:title="@string/cancel_menu"
+        android:id="@+id/cancel">
+    </item>
+    <item
+        android:title="@string/delete_menu"
+        android:id="@+id/delete">
+
+    </item>
+
+</menu>

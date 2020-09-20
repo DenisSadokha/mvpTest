@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundActivity"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <EditText
+                    android:id="@+id/etTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="@string/new_task_hint"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="#80636161"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+
+                </EditText>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="139.5dp"
+                    android:background="#A97B7B7B" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="36dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_text_fields_black_24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appbar" />
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/nothingTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginTop="24dp"
+                    android:text="@string/planTask"
+                    android:textColor="#000000">
+
+                </TextView>
+
+                <Switch
+                    android:id="@+id/sCheckTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/nothingTime">
+
+                </Switch>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_with_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/load_time_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/notTv"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@+id/notImgae"
+                        android:text="@string/timeEndTask"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/notTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_toEndOf="@+id/notImgae"
+                        android:text="@string/startTimeTask"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:id="@+id/bTimeStart"
+                        style="@style/item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center|start">
+
+                    </Button>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="48dp"
+                        android:background="#8D7B7B7B" />
+
+                    <Button
+                        android:id="@+id/bTimeEnd"
+                        style="@style/item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="49dp"
+
+
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="start|center_vertical">
+
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/tvTimeStatusStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="31dp"
+                        android:layout_marginBottom="100dp"
+                        android:gravity="end"
+                        tools:text="13:00">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvTimeStatusEnd"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="65dp"
+                        android:layout_marginEnd="31dp"
+                        android:layout_marginBottom="100dp"
+                        android:gravity="end"
+                        tools:text="15:00">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/notImgae"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_access_time_black_24dp">
+
+                    </ImageView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nothingNot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/notifTask"
+                        android:textColor="#000000">
+
+                    </TextView>
+
+                    <Switch
+                        android:id="@+id/sCheckNot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/nothingNot">
+
+                    </Switch>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff"
+
+                    >
+
+
+                    <Button
+                        android:id="@+id/bSetNotif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:foreground="?android:attr/selectableItemBackground">
+
+
+                    </Button>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/ic_notifications_none_black_24dp">
+
+                    </ImageView>
+
+                    <TextView
+
+                        android:id="@+id/tvStatusNotif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/norifBefore5"
+                        android:textColor="#000000">
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/when_create"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/dateTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="#19b2e6"
+                tools:text="29.01.2019" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">To-Do List</string>
+    <string name="_8942">⋮</string>
+    <string name="when_create">Задача будет создана на дату:</string>
+    <string name="date_create">Задача создана на дату:</string>
+    <string name="unfulfilledTask">Невыполненные</string>
+    <string name="newTask">Новая задача</string>
+    <string name="new_task_hint">Новая задача</string>
+    <string name="planTask">Запланировать</string>
+    <string name="startTimeTask">Начало</string>
+    <string name="timeEndTask">Конец</string>
+    <string name="notifTask">Уведомление</string>
+    <string name="norifBefore5">Уведомить за 5 минут</string>
+    <string name="norifBefore15">Уведомить за 15 минут</string>
+    <string name="norifBefore30">Уведомить за 30 минут</string>
+    <string name="norifBefore60">Уведомить за час</string>
+    <string name="statusCancle">Отменено</string>
+    <string name="statusPlan">Запланировано</string>
+    <string name="statusProcess">В процессе</string>
+    <string name="Task_change">Задача</string>
+    <string name="statusDone">Выполнил</string>
+    <string name="deleteToast">Удалено</string>
+    <string name="delete_menu">Удалить</string>
+    <string name="cancel_menu">Отменить</string>
+    <string name="done_menu">Выполнил</string>
+    <string name="do_list">Список дел</string>
+    <string name="list_clear">Список пуст</string>
+    <string name="all_delete">Все удалено</string>
+    <string name="dateWhenCreate">Создано</string>
+    <string name="saveToast">Сохранено</string>
+
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/before5"
+        style="@style/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/norifBefore5">
+
+    </Button>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+
+        android:background="#8D7B7B7B" />
+    <Button
+        android:id="@+id/before15"
+        style="@style/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/norifBefore15">
+
+    </Button>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+
+        android:background="#8D7B7B7B" />
+    <Button
+        android:id="@+id/before30"
+        style="@style/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/norifBefore30">
+
+    </Button>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+
+        android:background="#8D7B7B7B" />
+    <Button
+        android:id="@+id/beforeHour"
+        style="@style/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        android:text="@string/norifBefore60">
+    </Button>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+
+        android:background="#8D7B7B7B" />
+</LinearLayout>

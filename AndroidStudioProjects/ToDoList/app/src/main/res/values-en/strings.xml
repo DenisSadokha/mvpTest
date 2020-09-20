@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="when_create">Task will be created on a date:</string>
+    <string name="date_create">Task created on date:</string>
+    <string name="unfulfilledTask">Unfulfilled</string>
+    <string name="newTask">New task</string>
+    <string name="new_task_hint">Write new task</string>
+    <string name="planTask">To plan</string>
+    <string name="startTimeTask">Start</string>
+    <string name="timeEndTask">End</string>
+    <string name="notifTask">Notification</string>
+    <string name="norifBefore5">Notify in 5 minutes</string>
+    <string name="norifBefore15">Notify in 15 minutes</string>
+    <string name="norifBefore30">Notify in 30 minutes</string>
+    <string name="norifBefore60">Notify in one hour</string>
+    <string name="statusCancle">Canceled</string>
+    <string name="statusPlan">Scheduled</string>
+    <string name="statusProcess">In process</string>
+    <string name="Task_change">Task</string>
+    <string name="statusDone">Done</string>
+    <string name="deleteToast">Deleted</string>
+    <string name="delete_menu">Delete</string>
+    <string name="cancel_menu">Cancel</string>
+    <string name="done_menu">Perform</string>
+    <string name="do_list">To-Do list</string>
+    <string name="list_clear">List is empty</string>
+    <string name="all_delete">All deleted</string>
+    <string name="dateWhenCreate">Created</string>
+    <string name="saveToast">Сохранено</string>
+
+</resources>

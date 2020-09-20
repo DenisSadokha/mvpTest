@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/nothingImage"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/notDat"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/cardTask"
+                android:src="@drawable/ic_history_black_36dp" />
+
+
+            <TextView
+                android:id="@+id/notDat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cardDate"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:layout_toStartOf="@+id/cardTask"
+                android:text="@string/dateWhenCreate"
+                android:textColor="#45B39D">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/cardDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_marginStart="2dp"
+                android:textColor="#D35400"
+                android:textSize="15sp"
+                tools:text="29.01.2019">
+
+            </TextView>
+
+            <TextView
+
+                android:id="@+id/cardTask"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/option"
+                android:layout_toEndOf="@+id/cardDate"
+                android:layout_marginStart="8dp"
+                android:textColor="#000000"
+                android:maxLines="4"
+                android:ellipsize="end"
+
+                android:textSize="18sp"
+                tools:text="wqeqeqwqeqwewqasadassasdasdasdasdsadasdsadasdeqweфывфывфыввdasdasdasdasdsadsadasdsadasdasdasdasdasdsadasdsaasdфвфывфывфывeq">
+            </TextView>
+
+            <TextView
+                android:id="@+id/option"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/_8942"
+                android:textSize="30sp">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
